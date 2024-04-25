@@ -121,7 +121,7 @@ class CowinDashboard extends Component {
               src="https://assets.ccbp.in/frontend/react-js/cowin-logo.png"
               alt="website logo"
             />
-            <h1 className="logo-heading">Co-WIN</h1>
+            <h1 className="logo-heading">CoWIN Vaccination in India</h1>
           </div>
           {this.renderViewBasedOnApiStatus()}
         </div>
