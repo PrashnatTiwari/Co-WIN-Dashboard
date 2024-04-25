@@ -101,15 +101,15 @@ class CowinDashboard extends Component {
   renderViewBasedOnApiStatus = () => {
     const {apiStatus} = this.state
     switch (apiStatus) {
-      case apiStatus.success:
-        return this.renderVaccinationStatus()
-      case apiStatus.failure:
-        return this.renderFailureView()
-      case apiStatus.inProgress:
-        return this.renderLoadingView()
-      default:
-        return null
-    }
+   case apiStatusConstant.success:
+     return this.renderVaccinationStatus()
+   case apiStatusConstant.failure:
+     return this.renderFailureView()
+   case apiStatusConstant.inProgress:
+     return this.renderLoadingView()
+   default:
+     return null    
+}
   }
 
   render() {
